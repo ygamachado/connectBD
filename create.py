@@ -11,12 +11,11 @@ connection = mysql.connector.connect(
 )
 
 cursor = connection.cursor()
+
 sql = "INSERT INTO users (name, email, created) VALUES (%s, %s, %s)"
-print("digite usuario")
-usuario=input("")
 data = (
-  f'{usuario}',
-  'segundousuario@teste.com.br',
+  'Primeiro Usuário',
+  'primeirousuario@teste.com.br',
   datetime.datetime.today()
 )
 

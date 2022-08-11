@@ -12,7 +12,7 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 
-sql = f"SELECT name FROM users Where id = ''"
+sql = f"SELECT * FROM users"
 
 cursor.execute(sql)
 results = cursor.fetchall()
